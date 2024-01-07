@@ -1,6 +1,6 @@
 /*  LogSystem.h file
  *  * Created by Langyan Zang
- *  * Last edit: 2024-1-6 
+ *  * Last edit: 2024-1-7 
  *
  *  * This file is intended to provide colorful output to terminal APIs, or more formmally macros
  *  

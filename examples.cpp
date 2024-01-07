@@ -1,3 +1,11 @@
+/*  example.cpp
+ *
+ *  An Example file showing use case for LogSystem
+ *  
+ *  Created by Langyan
+ *  Last edit: 2024-1-7
+ *
+ */
 #include "LogSystem.h"
 
 #define MY_INFO(s) LOG("MY Customized INFO: " s, "1;3;7;", "106;33")
