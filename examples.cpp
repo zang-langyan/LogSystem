@@ -20,4 +20,7 @@ int main(){
   LOG("Cutomize your log with this", "1;3;7;","106;31");
 
   MY_INFO("你好");
+
+
+  std::cout << "Nice Literal"_cyan << std::endl;
 }

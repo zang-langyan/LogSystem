@@ -49,6 +49,30 @@
 
 #include <iostream>
 
+std::string operator ""_red(const char* message, size_t) {
+    return "\033[1;31m" + std::string(message) + "\033[0m";
+}
+
+std::string operator ""_green(const char* message, size_t) {
+    return "\033[1;32m" + std::string(message) + "\033[0m";
+}
+
+std::string operator ""_yellow(const char* message, size_t) {
+    return "\033[1;33m" + std::string(message) + "\033[0m";
+}
+
+std::string operator ""_blue(const char* message, size_t) {
+    return "\033[1;34m" + std::string(message) + "\033[0m";
+}
+
+std::string operator ""_magenta(const char* message, size_t) {
+    return "\033[1;35m" + std::string(message) + "\033[0m";
+}
+
+std::string operator ""_cyan(const char* message, size_t) {
+    return "\033[1;36m" + std::string(message) + "\033[0m";
+}
+
 #define INFO(s) std::cout << "\033[1;97mINFO: " s "\033[0m\n" 
 #define WARN(s) std::cout << "\033[1;7;93mWARNING: " s "\033[0m\n" 
 #define TRACE(s) std::cout << "\033[1;34mTRACE: " s "\033[0m\n" 
