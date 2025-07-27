@@ -7,6 +7,7 @@
  *
  */
 #include "LogSystem.h"
+#include "Tabulate.h"
 
 #define MY_INFO(s) LOG("MY Customized INFO: " s, "1;3;7;", "106;33")
 
@@ -23,4 +24,18 @@ int main(){
 
 
   std::cout << "Nice Literal"_cyan << std::endl;
+
+
+  Tabulate table;
+  table.setHeaders({"ID", "Name", "Score"}, {Align::Left, Align::Right, Align::Center});
+  // table.setStyle(TableStyle::Unicode);
+
+  table.addRow(1, "Alice", 92.5);
+  table.addRow(
+      2, "Bob", 22
+  );
+  table.addRow(3, "Charlie", 100);
+
+  table.print();
+  // std::cout << table.to_string();
 }
